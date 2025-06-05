@@ -1,19 +1,44 @@
-/.phpunit.cache
+# Direktori yang dihasilkan oleh manajemen dependensi atau build
 /node_modules
+/vendor
 /public/build
 /public/hot
 /public/storage
-/storage/*.key
-/vendor
+
+# File konfigurasi lingkungan
 .env
 .env.backup
 .env.production
+
+# File terkait PHPUnit dan cache
+/.phpunit.cache
 .phpunit.result.cache
+
+# File terkait pengembangan lokal
 Homestead.json
 Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
 /.fleet
 /.idea
 /.vscode
+/.vagrant
+
+# Log dan file sementara
+npm-debug.log
+yarn-error.log
+
+# Kunci penyimpanan
+storage/*.key
+
+# File Laravel 4 (opsional, jika proyek Anda bukan Laravel 4, bisa dihapus)
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific with changed public path (opsional, jika tidak digunakan, bisa dihapus)
+public_html/storage
+public_html/hot
+
+# File terkait PHPactor (opsional, jika tidak digunakan, bisa dihapus)
+.phpactor.json
+
+# File terkait autentikasi
+auth.json
