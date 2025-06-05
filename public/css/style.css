@@ -160,50 +160,52 @@
 /* footer end */
 
 /* slider pada about */
-.slider-galeri2 {
-  height: 400px;
-  margin: auto;
-  position: relative;
+.galeri2 {
   width: 100%;
-  display: grid;
-  place-items: center;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+.slider-galeri2 {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .slide-track-galeri2 {
   display: flex;
-  width: calc(400px * 18); /* 9 gambar * 2 (karena diduplikat) */
-  animation: scroll 40s linear infinite;
+  width: max-content;
+  animation: scroll 60s linear infinite;
 }
 
+.slide-galeri2 {
+  flex: 0 0 auto;
+  width: 200px;
+  margin-right: 16px;
+}
+
+.slide-galeri2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Auto-scroll infinite animation */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 9)); /* geser 9 gambar */
+    transform: translateX(-50%);
   }
 }
 
-.slide-galeri2 {
-  width: 400px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5px; /* lebih rapat horizontal */
-  margin: 0; /*hilangkan margin antar slide */
-  box-sizing: border-box;
-}
-
-.slide-galeri2 img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  object-fit: contain; /* Gambar tidak akan terpotong */
-  display: block;
-  border-radius: 8px;
-}
+/* Responsive */
+@media (min-width: 768px) {
+  .slide-galeri2 {
+    width: 250px;
+  }
 /* slider end pada about */
 
 /* style galeri.html */

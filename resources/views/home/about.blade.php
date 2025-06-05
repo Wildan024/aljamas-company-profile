@@ -130,85 +130,70 @@
 
 
        <!-- Galeri/porto -->
-<div class="galeri2 bg-light">
-  <div class="container my-0 mx-5">
+<div class="galeri2 bg-light py-5 px-0 my-5">
+  <div class="container-fluid px-0">
 
-  
-              <div class="slider-galeri2">
-                <div class="slide-track-galeri2">
-                  <!-- gambar -->
-                <div class="slide-galeri2">
-                  <img src="img/1.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/11.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/111.jpg" alt="">
-                </div>
-                <div class="slide-galeri2">
-                  <img src="img/1.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/11.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/111.jpg" alt="">
-                </div>
-                <div class="slide-galeri2">
-                  <img src="img/1.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/11.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/111.jpg" alt="">
-                </div>
-
-                <!-- loop duplikat gambar -->
-                <div class="slide-galeri2">
-                  <img src="img/1.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/11.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/111.jpg" alt="">
-                </div>
-                <div class="slide-galeri2">
-                  <img src="img/1.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/11.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/111.jpg" alt="">
-                </div>
-                <div class="slide-galeri2">
-                  <img src="img/1.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/11.jpg" alt="">
-                </div>
-                  <div class="slide-galeri2">
-                  <img src="img/111.jpg" alt="">
-                </div>
-                <!-- loop duplikat end -->
-                
-                <!-- end gambar  -->
-              
-                </div>
-              </div>
-  
-                
-                
-                <!-- end gambar  -->
-              
-                </div>
-              
-  <!-- end slider kedua -->
+    <div class="slider-galeri2">
+      <div class="slide-track-galeri2">
+        <div class="slide-galeri2">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/11.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/111.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/11.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/111.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/11.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/111.jpg" alt="">
+        </div>
+        {{-- looping gambar --}}
+        <div class="slide-galeri2">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/11.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/111.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/11.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/111.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/11.jpg" alt="">
+        </div>
+        <div class="slide-galeri2">
+          <img src="img/111.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    </div>
   </div>
-</div>
     <!-- Galeri/porto end -->
 
 
