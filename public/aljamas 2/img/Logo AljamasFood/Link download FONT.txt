@@ -1,0 +1,8 @@
+Sebelum membuka File master (cdr, ai, pdf)
+sebaiknya Install Font nya dulu agar tidak Missing Font.
+
+Download Font di link ini :
+1. https://fonts.google.com/specimen/Calistoga
+2. https://fonts.google.com/specimen/Poppins
+
+Lalu Install di Komputer Anda

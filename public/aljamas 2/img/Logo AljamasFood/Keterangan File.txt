@@ -1,0 +1,37 @@
+Keterangan File :
+
+
+1. File dalam format zip (klik kanan - Extract Files)
+2. di dalamnya ada beberapa file :
+
+File Vector 
+(Untuk kebutuhan Cetak, 
+Materi Pemasaran, Bikin Animasi, 
+Edit, Dsb) --> Buat Desainer Grafis, Vendor, 
+Percetakan) :
+
+- CDR (CorelDraw) : ada 2 Versi, 
+2022 (Gunakan Coreldraw Versi 2022) 
+dan 15 (Bisa dibuka di 
+Coreldraw Versi 2022 Kebawah Sampai 15)
+
+- PDF (Bisa dibuka dan diedit di Coreldraw 
+dan Adobe Illustrator)
+
+- AI (Adobe Illustrator) 
+
+-------------------------------------------------------
+-------------------------------
+
+- JPG (Untuk Media Sosial) --> bisa anda gunakan
+
+- PNG (Untuk Dokumen, Powerpoint, 
+Email, Kop surat, Watermark) --> bisa anda gunakan
+
+- PNG, SVG (Untuk Aplikasi, Website, Blog, Landingpage)
+ --> Untuk Developer / Pengembang
+
+-------------------------------------------------------
+-------------------------------
+
+www.kreatiflogo.com

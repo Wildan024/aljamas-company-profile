@@ -1,0 +1,236 @@
+/* carousel/ jumbotron */
+.carousel-img {
+  max-height: 100vh;
+}
+.carousel-caption {
+  background-color: ;
+}
+/* carousel/ jumbotron end */
+.vh-50 {
+  height: 50vh;
+}
+
+/* about us on home  */
+/* h2:after {
+  content: "";
+  positon: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: green;
+  bottom: 0;
+  left: calc(50% - 25px);
+} */
+.title-container {
+  positon: relative;
+  padding-bottom: 20px;
+}
+.about-us-title {
+  font-size: 50px;
+}
+
+.about-us-sub {
+  font-size: 20px;
+}
+/* about us end on home*/
+
+/*service  */
+.card-icon {
+  transition: 0.5s;
+}
+.card-icon:hover {
+  color: #999999;
+}
+/* end service */
+
+/* section produk */
+.card-produk {
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* This ensures images maintain aspect ratio while filling the specified height */
+}
+
+/* section produk end */
+
+/* gambar */
+.slider-galeri {
+  height: 250px;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track-galeri {
+  display: flex;
+  width: calc(250px * 18); /* 9 gambar * 2 (karena diduplikat) */
+  animation: scroll 40s linear infinite;
+}
+.slide-track-galeri.reverse {
+  animation: scroll-reverse 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9)); /* geser 9 gambar */
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(calc(-250px * 9));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-galeri {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.slide-galeri img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover; /* Gambar tidak akan terpotong */
+  display: block;
+}
+
+/* gambar end */
+
+/* e-commerce */
+.client img {
+  margin: 10px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.client img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* e-commerce end */
+
+/* footer */
+.img-footer {
+  height: 60px !important;
+  width: auto !important;
+}
+
+.custom-hr {
+  border: none;
+  height: 2000px; /* tebal garis */
+  background-color: #ffffff; /* warna garis */
+  width: auto;
+  margin: 0 auto;
+}
+
+.icon {
+  color: #ffffff;
+}
+.alamat {
+  color: white;
+  text-decoration: none;
+  transition: color 0s ease;
+}
+
+/* Efek pada tautan Google Maps di footer */
+/* .alamat a {
+  color: #ffffffb3; /* warna putih semi-transparan default */
+  /* transition: color 0.3s ease, text-decoration 0.3s ease; */
+} */
+
+.alamat a:hover {
+  color: #0dcaf0; /* biru muda saat hover */
+  text-decoration: underline;
+}
+
+/* footer end */
+
+/* slider pada about */
+.slider-galeri2 {
+  height: 400px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track-galeri2 {
+  display: flex;
+  width: calc(400px * 18); /* 9 gambar * 2 (karena diduplikat) */
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9)); /* geser 9 gambar */
+  }
+}
+
+.slide-galeri2 {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px; /* lebih rapat horizontal */
+  margin: 0; /*hilangkan margin antar slide */
+  box-sizing: border-box;
+}
+
+.slide-galeri2 img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain; /* Gambar tidak akan terpotong */
+  display: block;
+  border-radius: 8px;
+}
+/* slider end pada about */
+
+/* style galeri.html */
+.card-galeri {
+  width: 18rem;
+}
+.card-galeri img {
+  border: 1px solid #dee2e6; /* kasih border kalau perlu */
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.galeri-col {
+  padding-right: 0;
+}
+
+/* style galeri.html end */
+
+/* style artikel.html */
+.spacer-navbar {
+  /* margin-top: 80px; */
+}
+/* style artikel.html end */
+
+/* style contact.html */
+.pesan-form {
+  height: 150px;
+}
+/* style contact.html end */
