@@ -38,17 +38,28 @@ Route::resource('galeris', GaleriController::class)->middleware('auth');
 // Route::get('/about', [AboutController::class, 'index'])->middleware('auth');
 
 // crud pada Contact VIEW ke dashboard
-Route::get('/contact', [ContactController::class, 'index'])->middleware('auth');
-Route::post('/contact', [ContactController::class, 'update'])->middleware('auth');
+Route::get('/contacts', [ContactController::class, 'index'])->middleware('auth');
+Route::post('/contacts', [ContactController::class, 'update'])->middleware('auth');
 
 Route::middleware('auth')->controller(ContactController::class)->group(function () {
-    Route::get('/contact', 'index')->name('contact.index');
-    Route::get('/contact/create', 'create')->name('contact.create'); // form tambah
-    Route::post('/contact', 'store')->name('contact.store');         // simpan data baru
-    Route::put('/contact/{contact}', 'update')->name('contact.update');   // update data existing
+    Route::get('/contacts', 'index')->name('contacts.index');
+    Route::get('/contacts/create', 'create')->name('contacts.create');
+    Route::post('/contacts', 'store')->name('contacts.store');
+    Route::put('/contacts/{contact}', 'update')->name('contacts.update');
 });
 
 
+// crud pada tentang kami VIEW ke dashboard
+Route::get('/abouts', [AboutController::class, 'index'])->middleware('auth');
+// Route::post('/abouts', [AboutController::class, 'update'])->middleware('auth');
 
+Route::middleware('auth')->controller(AboutController::class)->group(function () {
+    Route::get('/abouts', 'index')->name('abouts.index');
+    Route::get('/abouts/create', 'create')->name('abouts.create');
+    Route::get('/abouts/edit', 'edit')->name('abouts.edit');
+    Route::post('/abouts', 'store')->name('abouts.store');
+    Route::put('/abouts/{about}', 'update')->name('abouts.update');
+    Route::delete('/abouts/{about}', 'destroy')->name('abouts.destroy');
+});
 
 

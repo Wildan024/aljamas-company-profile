@@ -17,7 +17,7 @@
                         </div>
                     @endif
 
-                <form action="{{ route('contact.update', $contact->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('contacts.update', $contact->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT') {{-- Gunakan method PUT untuk update --}}
 
@@ -35,7 +35,7 @@
                     <label class="form-label">Logo</label>
                     @if ($contact->logo)
                         <div class="mb-2">
-                            <img src="{{ asset('uploads/contact/' . $contact->logo) }}" alt="Logo" height="80">
+                            <img src="{{ asset('uploads/contacts/' . $contact->logo) }}" alt="Logo" height="80">
                         </div>
                     @endif
                     <input type="file" class="form-control" name="logo" accept="image/*">

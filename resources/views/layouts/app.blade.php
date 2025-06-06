@@ -209,13 +209,13 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="/about" class="nav-link">
+          <a href="/abouts" class="nav-link">
             <i class="nav-icon bi bi-person"></i>
             <p>Tentang</p>
           </a>
         </li>
          <li class="nav-item">
-          <a href="/contact" class="nav-link">
+          <a href="/contacts" class="nav-link">
             <i class="nav-icon bi bi-telephone"></i>
             <p>Contact</p>
           </a>

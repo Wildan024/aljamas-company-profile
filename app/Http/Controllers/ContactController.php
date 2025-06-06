@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\contact;
+use App\Models\contact; // Pastikan 'contact' di sini merujuk ke Model Contact 
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -12,10 +12,12 @@ class ContactController extends Controller
      */
     public function index()
     {
+        // PERBAIKAN: Mengambil satu kontak dan menyimpannya ke variabel $contact (tunggal)
+        // Sesuai dengan apa yang diharapkan oleh form edit  di contacts.blade.php
         $contact = contact::first();
 
-
-        return view('contact', compact('contact'));
+        // Meneruskan variabel $contact (tunggal) ke view 'contacts'
+        return view('contacts', compact('contact'));
     }
 
     /**
@@ -23,7 +25,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        // Kode  untuk membuat resource baru
     }
 
     /**
@@ -31,7 +33,7 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Kode  untuk menyimpan data baru
     }
 
     /**
@@ -39,7 +41,7 @@ class ContactController extends Controller
      */
     public function show(contact $contact)
     {
-        //
+        // Kode  untuk menampilkan resource tertentu
     }
 
     /**
@@ -47,15 +49,18 @@ class ContactController extends Controller
      */
     public function edit(contact $contact)
     {
-        //
+        // Jika form edit  ini dipanggil dari metode 'edit' di route,
+        // maka  akan mengembalikan view di sini
+        // return view('contacts', compact('contact'));
     }
 
     /**
      * Update the specified resource in storage.
      */
+    // PERBAIKAN: Parameter type-hinting harus $contact (tunggal)
     public function update(Request $request, contact $contact)
     {
-         // Validasi input
+        // Validasi input
         $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'required|string',
@@ -66,10 +71,7 @@ class ContactController extends Controller
             'logo' => 'nullable|image|mimes:jpg,jpeg,png,svg,webp',
         ]);
 
-        // // Ambil data contact berdasarkan ID, jika tidak ditemukan maka akan menampilkan error 404
-        // $contact = Contact::findOrFail($id);
-
-        // Simpan data inputan
+        // Simpan data inputan ke objek $contact (tunggal) yang di-inject oleh Laravel
         $contact->name = $request->name; // Nama perusahaan
         $contact->description = $request->description; // Deskripsi perusahaan
         $contact->alamat = $request->alamat; // Alamat
@@ -99,8 +101,9 @@ class ContactController extends Controller
     /**
      * Remove the specified resource from storage.
      */
+    // PERBAIKAN: Parameter type-hinting harus $contact (tunggal)
     public function destroy(contact $contact)
     {
-        //
+        // Kode  untuk menghapus resource
     }
 }

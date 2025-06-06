@@ -12,7 +12,12 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('about');
+        // Mengambil semua data 'About' untuk ditampilkan dalam daftar
+        $abouts = about::all();
+
+        // Mengembalikan view untuk daftar konten 'Tentang Kami'
+        // View ini akan berada di resources/views/abouts.blade.php
+        return view('abouts', compact('abouts'));
     }
 
     /**
@@ -28,7 +33,19 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    // Validasi input untuk data baru
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+        ]);
+
+        $about = new About(); // Buat instance model About baru
+        $about->title = $request->title;
+        $about->description = $request->description;
+
+        $about->save(); // Simpan data konten 'Tentang Kami' baru
+
+        return redirect()->route('abouts.index')->with('message', 'Data Tentang Kami berhasil ditambahkan!');
     }
 
     /**
@@ -44,7 +61,7 @@ class AboutController extends Controller
      */
     public function edit(about $about)
     {
-        //
+
     }
 
     /**
@@ -52,14 +69,29 @@ class AboutController extends Controller
      */
     public function update(Request $request, about $about)
     {
-        //
-    }
+            // Validasi input
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+
+        ]);
+
+        // Simpan data inputan ke objek $about yang di-inject oleh Laravel
+        $about->title = $request->title;
+        $about->description = $request->description;
+
+        $about->save();
+
+        return redirect()->route('abouts')->with('message', 'Data Tentang Kami berhasil diperbarui!');
+    }   
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(about $about)
     {
-        //
+        $about->delete(); // Hapus data konten 'Tentang Kami'
+
+        return redirect()->route('abouts.index')->with('message', 'Data Tentang Kami berhasil dihapus!');
     }
 }
