@@ -90,7 +90,7 @@
                 Tips membersihkan sepatu putih agar selalu tampak seperti
                 baru...
               </p>
-              <a href="artikel.html" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+              <a href="artikels" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
             </div>
           </div>
         </div>

@@ -15,9 +15,9 @@ class AboutController extends Controller
         // Mengambil semua data 'About' untuk ditampilkan dalam daftar
         $abouts = about::all();
 
-        // Mengembalikan view untuk daftar konten 'Tentang Kami'
+        // Mengembalikan view untuk daftar konten 'About'
         // View ini akan berada di resources/views/abouts.blade.php
-        return view('abouts', compact('abouts'));
+        return view('about.abouts', compact('abouts'));
     }
 
     /**
@@ -43,9 +43,9 @@ class AboutController extends Controller
         $about->title = $request->title;
         $about->description = $request->description;
 
-        $about->save(); // Simpan data konten 'Tentang Kami' baru
+        $about->save(); // Simpan data konten 'About' baru
 
-        return redirect()->route('abouts.index')->with('message', 'Data Tentang Kami berhasil ditambahkan!');
+        return redirect()->route('about.abouts')->with('message', 'Data About berhasil ditambahkan!');
     }
 
     /**
@@ -82,7 +82,7 @@ class AboutController extends Controller
 
         $about->save();
 
-        return redirect()->route('abouts')->with('message', 'Data Tentang Kami berhasil diperbarui!');
+        return redirect()->route('about.abouts')->with('message', 'Data About berhasil diperbarui!');
     }   
 
     /**
@@ -90,8 +90,8 @@ class AboutController extends Controller
      */
     public function destroy(about $about)
     {
-        $about->delete(); // Hapus data konten 'Tentang Kami'
+    $about->delete(); // Hapus data konten 'About'
 
-        return redirect()->route('abouts.index')->with('message', 'Data Tentang Kami berhasil dihapus!');
+        return redirect()->route('about.abouts')->with('message', 'Data About berhasil dihapus!');
     }
 }

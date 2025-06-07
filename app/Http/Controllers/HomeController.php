@@ -31,9 +31,9 @@ class HomeController extends Controller
         return view('home.contact');
     }
 
-    public function artikel()
+    public function artikels()
     {
-        return view('home.artikel');
+        return view('home.artikels');
     }
 
 }

@@ -38,41 +38,42 @@
   </head>
   <body>
     <!-- navbar -->
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top py-1">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="/">
-            <img
-                src="img/Logo AljamasFood/SVG (Buat dipasang di Website atau Landingpage)/AljamasFood hijau.svg"
-                alt="Logo"
-                width="30"
-                height="30"
-                class="d-inline-block align-text-top me-2"
-            />
-            Aljamas</a
-            >
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span> 
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/blog">Blog</a>
-                </li>
-            </ul>
-            </div>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top py-1">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">
+          <img
+            src="img/Logo AljamasFood/SVG (Buat dipasang di Website atau Landingpage)/AljamasFood hijau.svg"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top me-2"
+          />
+          Aljamas</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+          </ul>
         </div>
-        </nav>
+      </div>
+    </nav>
+
 <!-- navbar end -->
 
 <!-- jumbotron -->
@@ -130,70 +131,83 @@
 
 
        <!-- Galeri/porto -->
-<div class="galeri2 bg-light py-5 px-0 my-5">
+<div class="galeri2 bg-dark py-5">
   <div class="container-fluid px-0">
+              <div class="slider-galeri2">
+                <div class="slide-track-galeri2">
+                  <!-- gambar -->
+                <div class="slide-galeri2">
+                  <img src="img/1.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/11.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/111.jpg" alt="">
+                </div>
+                <div class="slide-galeri2">
+                  <img src="img/1.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/11.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/111.jpg" alt="">
+                </div>
+                <div class="slide-galeri2">
+                  <img src="img/1.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/11.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/111.jpg" alt="">
+                </div>
 
-    <div class="slider-galeri2">
-      <div class="slide-track-galeri2">
-        <div class="slide-galeri2">
-          <img src="img/1.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/11.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/111.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/1.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/11.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/111.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/1.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/11.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/111.jpg" alt="">
-        </div>
-        {{-- looping gambar --}}
-        <div class="slide-galeri2">
-          <img src="img/1.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/11.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/111.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/1.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/11.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/111.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/1.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/11.jpg" alt="">
-        </div>
-        <div class="slide-galeri2">
-          <img src="img/111.jpg" alt="">
-        </div>
-        </div>
-    </div>
-    </div>
+                <!-- loop duplikat gambar -->
+                <div class="slide-galeri2">
+                  <img src="img/1.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/11.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/111.jpg" alt="">
+                </div>
+                <div class="slide-galeri2">
+                  <img src="img/1.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/11.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/111.jpg" alt="">
+                </div>
+                <div class="slide-galeri2">
+                  <img src="img/1.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/11.jpg" alt="">
+                </div>
+                  <div class="slide-galeri2">
+                  <img src="img/111.jpg" alt="">
+                </div>
+                <!-- loop duplikat end -->
+                
+                <!-- end gambar  -->
+              
+                </div>
+              </div>
+  
+                
+                
+                <!-- end gambar  -->
+              
+                </div>
+              
+  <!-- end slider kedua -->
   </div>
+</div>
     <!-- Galeri/porto end -->
 
 

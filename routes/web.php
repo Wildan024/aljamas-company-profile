@@ -6,6 +6,7 @@ use App\Http\Controllers\SliderController;
 use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ArtikelController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
@@ -13,7 +14,8 @@ Route::get('/about', [HomeController::class, 'about']);
 Route::get('/blog', [HomeController::class, 'blog']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/galeri', [HomeController::class, 'galeri']);
-Route::get('/artikel', [HomeController::class, 'artikel']);
+Route::get('/artikels', [HomeController::class, 'artikels']);
+
 
 
 // panel login dan logout
@@ -62,4 +64,5 @@ Route::middleware('auth')->controller(AboutController::class)->group(function ()
     Route::delete('/abouts/{about}', 'destroy')->name('abouts.destroy');
 });
 
+Route::resource('artikel', ArtikelController::class)->middleware('auth');
 

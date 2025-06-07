@@ -1,17 +1,12 @@
 @extends('layouts.app2')
 
 @section('title')
-    Data Home
-@endsection
-
-@section('title1')
-    Data Slider
+    Data Artikel
 @endsection
 
 @section('content')
-    
     <div class="container">
-       <a href="sliders/create" class="btn btn-outline-success mb-3">Tambah Data</a>
+       <a href="{{ route('artikel.create') }}" class="btn btn-outline-success mb-3">Tambah Data</a>
 
         @if ($message = Session::get('message'))
             <div class="alert alert-success">
@@ -36,17 +31,17 @@
                     @php
                         $i = 1
                     @endphp
-                    @foreach ($sliders as $slider)
+                    @foreach ($artikels as $artikel)
                     <tr class="align-middle">
                         <td>{{ $i++ }}</td>
-                        <td>{{ $slider->title}}</td>
-                        <td>{{ $slider->description}}</td>
+                        <td>{{ $artikel->title}}</td>
+                        <td>{!! $artikel->description !!}</td>
                         <td>
-                        <img src="/image/{{$slider->image}}" alt="" class="img-fluid" width="90">
+                        <img src="/image/{{$artikel->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
-                            <a href="{{ route('sliders.edit', $slider->id) }}" class="btn btn-warning mb-2">Ubah</a>
-                            <form action="{{ route('sliders.destroy', $slider->id) }}" method="POST">
+                            <a href="{{ route('artikel.edit', $artikel->id) }}" class="btn btn-warning mb-2">Ubah</a>
+                            <form action="{{ route('artikel.destroy', $artikel->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Hapus</button>
@@ -59,8 +54,7 @@
         </div>
     </div>
 
-    <!-- Modal Konfirmasi Hapus -->
-<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <form id="deleteForm" method="POST">
       @csrf
@@ -81,6 +75,4 @@
     </form>
   </div>
 </div>
-
-
 @endsection
